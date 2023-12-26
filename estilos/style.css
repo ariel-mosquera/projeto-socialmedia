@@ -46,11 +46,22 @@ iframe#screen {
 section#redes-sociais{
     position: relative;
     display: flex;
-    align-self: flex-end;
-    flex-direction: column;
+    align-self: flex-start;
+    flex-direction: row;
 
 }
 
 section#redes-sociais img {
     width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.489);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: solid rgba(255, 255, 255, 0.634) 2px;
+    transform: translate(-5px, 5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.489);
+    transition: transform 0.5s;
 }
